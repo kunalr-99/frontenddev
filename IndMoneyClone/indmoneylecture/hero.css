@@ -1,0 +1,142 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-wrapper {
+  background-color: #283964;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.hero-wrapper a {
+  color: #fff;
+}
+
+.hero {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-head {
+  font-size: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.head-fixed {
+  color: #33a34d;
+  margin-bottom: 30px;
+}
+
+.hero-banner {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.tab-bar {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.tab-data {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 25px;
+  padding: 20px 25px;
+}
+
+.item-chosen {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.item-chosen a {
+  color: blue;
+}
+
+.tab-data-item {
+  display: flex;
+  align-items: center;
+}
+
+.item-icon {
+  color: #33a34d;
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.item-details {
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.hero-reviews {
+  width: 600px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 50px; */
+}
+
+.review-stars,
+.review-trust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.star-text,
+.trust-text {
+  margin-bottom: 8px;
+}
+
+.star-icons {
+  color: yellow;
+}
+
+.explore {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #33a34d;
+  padding: 15px 35px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.hero-trending {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.hero-trending a {
+  font-size: 0.75rem;
+  color: #aaa;
+  padding: 5px 15px;
+  border-right: 1px solid #aaa;
+}
+
+.trending-item {
+  margin-bottom: 10px;
+}

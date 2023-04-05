@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar styling</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+      img {
+        width: 80px;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn a {
+        background-color: blue;
+        color: white;
+        border-radius: 8px;
+        padding: 10px 15px;
+      }
+      .nav-link:hover {
+        border-bottom: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <img
+        class="logo"
+        src="https://www.phylum.io/hs-fs/hubfs/logotype_full_black@4x-1.png?width=750&name=logotype_full_black@4x-1.png"
+        alt="logo"
+      />
+      <ul class="navbar">
+        <li class="items"><a class="nav-link" href="#">Challenges</a></li>
+        <li class="items"><a class="nav-link" href="#">Solutions</a></li>
+        <li class="items"><a class="nav-link" href="#">Resources</a></li>
+        <li class="items"><a class="nav-link" href="#">Unlock Pro</a></li>
+      </ul>
+      <span class="btn"><a href="#">Sign up</a></span>
+    </div>
+  </body>
+</html>

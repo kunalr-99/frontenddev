@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - FLEXBOX</title>
+    <style>
+      .item {
+        width: 100px;
+        height: 80px;
+        background-color: #444;
+        border: 5px solid #000;
+        font-size: 2rem;
+        color: white;
+      }
+      .flex-container {
+        height: 500px;
+        background-color: #aaa;
+        padding: 10px;
+        display: flex;
+        /* direction - row
+        vertical - align items
+        horizontal - justify content
+        */
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        /* flex-wrap: wrap; */
+      }
+      /* .flex-item1 {
+        flex-grow: 1;
+      }
+      .flex-item2 {
+        flex-grow: 1;
+      }
+      .flex-item3 {
+        flex-grow: 3;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="item flex-item1">1</div>
+      <div class="item flex-item2">2</div>
+      <div class="item flex-item3">3</div>
+    </div>
+  </body>
+</html>

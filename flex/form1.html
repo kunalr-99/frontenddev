@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORMS</title>
+  </head>
+  <body>
+    <form action="#">
+      <!-- BASIC INPUT fields -->
+      <!-- Text field -->
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+      <!-- Number field -->
+      <label for="phone">Phone: </label>
+      <input type="number" name="phone" id="phone" />
+
+      <!-- Password field -->
+      <label for="pass">Password: </label>
+      <input type="password" name="pass" id="pass" />
+
+      <!-- Date field -->
+      <label for="dob">D.O.B: </label>
+      <input type="date" name="dob" id="dob" />
+
+      <!-- Email field -->
+      <label for="email">Email Id: </label>
+      <input type="email" name="email" id="email" placeholder="xyz@abc.in" />
+
+      <!-- Submit field -->
+      <input type="submit" value="New post" />
+
+      <!-- <hr /> horizontal rule -- adds a line across the page -->
+      <hr />
+
+      <!-- TextArea field -->
+      <label for="feedback">Give me your feed back</label>
+      <textarea name="feedback" id="feedback" cols="10" rows="2"></textarea>
+
+      <!-- Radio Buttons -->
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender" value="male" checked />Male
+      <input type="radio" name="gender" value="female" />Female
+      <input type="radio" name="gender" value="others" />Not to say
+      <hr />
+
+      <!-- Checkboxes -->
+      <label for="hobbies">Hobbies</label>
+      <input type="checkbox" name="hobbies" id="hobbies" />Cricket
+      <input type="checkbox" name="hobbies" id="hobbies" checked />Badmintom
+      <input type="checkbox" name="hobbies" id="hobbies" />Coding
+      <hr />
+
+      <!-- Select - dropdowns -->
+      <label for="car">Car:</label>
+      <select name="car" id="car">
+        <option value="bmw">BMW</option>
+        <option value="msds">Mercedes</option>
+        <option value="audios" selected>Audi</option>
+      </select>
+
+      <!-- Eg of radio buttons -->
+      <label for="qualification">Qualifications: </label>
+      <input
+        type="radio"
+        name="qualification"
+        id="qualification"
+        value="ssc"
+      />10th
+      <input
+        type="radio"
+        name="qualification"
+        id="qualification"
+        value="hsc"
+      />12th
+      <input
+        type="radio"
+        name="qualification"
+        id="qualification"
+        value="deg"
+      />BE
+    </form>
+  </body>
+</html>
