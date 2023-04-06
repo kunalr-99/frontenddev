@@ -45,6 +45,10 @@ a {
   border-radius: 25px;
 }
 
+.header-searchbar input:focus {
+  outline: none;
+}
+
 .nav-item {
   padding: 10px 15px;
 }
