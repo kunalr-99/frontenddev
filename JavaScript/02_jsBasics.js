@@ -8,9 +8,11 @@ Fake database (Api) navigation, etc
 
 */
 
+// // -x-x-x-x-x-x-x-x-x-x-x-x-x-x--x
+
 // // Topic 1: Functions
-// let data1 = 5;
-// let data2 = 65;
+// let data_num1 = 5;
+// let data_num2 = 65;
 
 // // General function declaration
 // // let sum = function (num1, num2) {
@@ -22,7 +24,7 @@ Fake database (Api) navigation, etc
 //   return num1 + num2;
 // };
 
-// console.log(sum(data1, data2));
+// console.log(sum(data_num1, data_num2));
 
 // // -x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
@@ -56,18 +58,18 @@ Fake database (Api) navigation, etc
 
 // // Topic 3: Advance array methods
 
-// const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// console.log(data);
+// const data1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(data1);
 
 // // 3.1: map method -> This will modify every element in the array
 
 // // Old way
-// for (let num = 0; num <= data.length - 1; num++) {
-//   console.log(data[num], "old way");
+// for (let num = 0; num <= data1.length - 1; num++) {
+//   console.log(data1[num], "old way");
 // }
 
 // // Using modern js map method
-// data.map((elem) => {
+// data1.map((elem) => {
 //   console.log(elem, "map method");
 // });
 
@@ -203,6 +205,7 @@ Fake database (Api) navigation, etc
 // console.log(database[1].categories[0]);
 // console.log(database[1].comments[0].content);
 
+// // // How individual post looks like during every iteration of map and filter method
 // // const post = {
 // //   title: "My second post",
 // //   creator: "Aniket",
