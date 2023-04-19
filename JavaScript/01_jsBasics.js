@@ -196,38 +196,3 @@ J) Loops (for, while, do-while)
 // for (let num = 1; num <= 20; num++) {
 //   console.log(num);
 // }'
-
-let Atharva = "My name i aTHARCA"; //string
-let answer = false; //Boolean
-console.log(answer);
-
-// // Operators
-
-// // Arithmetic ops + - * / %
-// console.log(4 + 6);
-// console.log(10 - 6);
-// console.log(10 * 6);
-// console.log(10 / 6);
-// console.log(18 % 6);
-
-// // conditional statement
-
-// let num = 1467555; //Number
-// if (num % 2 === 0) {
-//   console.log("even", num);
-// } else {
-//   console.log("odd", num);
-// }
-// let togglebtn = document.querySelector(".btn");
-
-// let changeTheme = () => {
-//   togglebtn.style.color = "red";
-// };
-
-// togglebtn.addEventListener("click", changeTheme);
-
-// for (let i = 0; i < 50; i++) {
-//   if (i % 4 == 0) {
-//     console.log(i);
-//   }
-// }
