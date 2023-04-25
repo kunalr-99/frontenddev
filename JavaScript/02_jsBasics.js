@@ -146,60 +146,90 @@ Fake database (Api) navigation, etc
 
 // // Fake Database Navigation and other handling methods
 
-// const database = [
-//   {
-//     title: "My first post",
-//     creator: "Kunal",
-//     desc: "acwgrgwtthtrhtetherhethe",
-//     categories: ["fiction", "motivation", "scifias"],
-//     likeCount: 10,
-//     comments: [
-//       {
-//         username: "kunal",
-//         content: "csdgehththrthhtr",
-//       },
-//       {
-//         username: "aniket",
-//         content: "csdgehtgrgregergegergtrr",
-//       },
-//     ],
-//   },
-//   {
-//     title: "My second post",
-//     creator: "Aniket",
-//     desc: "acwgrgwtthtrhtetherhethe",
-//     categories: ["action", "motivation"],
-//     likeCount: 10,
-//     comments: [
-//       {
-//         username: "vidya",
-//         content: "csdgehththrthhtr",
-//       },
-//       {
-//         username: "pradnya",
-//         content: "csdgehtgrgregergegergtrr",
-//       },
-//     ],
-//   },
-//   {
-//     title: "My third post",
-//     creator: "Pradnya",
-//     desc: "acwgrgwtthtrhtetherhethe",
-//     categories: ["action", "scifi"],
-//     likeCount: 10,
-//     comments: [
-//       {
-//         username: "kunal",
-//         content: "csdgehththrthhtr",
-//       },
-//       {
-//         username: "aniket",
-//         content: "csdgehtgrgregergegergtrr",
-//       },
-//     ],
-//   },
-// ];
+const database = [
+  {
+    title: "My first post",
+    creator: "Kunal",
+    desc: "acwgrgwtthtrhtetherhethe",
+    categories: ["fiction", "motivation", "scifi"],
+    likeCount: 10,
+    comments: [
+      {
+        username: "kunal",
+        content: "csdgehththrthhtr",
+      },
+      {
+        username: "aniket",
+        content: "csdgehtgrgregergegergtrr",
+      },
+    ],
+  },
+  {
+    title: "My second post",
+    creator: "Aniket",
+    desc: "acwgrgwtthtrhtetherhethe",
+    categories: ["scifi"],
+    likeCount: 13,
+    comments: [
+      {
+        username: "vidya",
+        content: "abc",
+      },
+      {
+        username: "pradnya",
+        content: "csdgehtgrgregergegergtrr",
+      },
+    ],
+  },
+  {
+    title: "My third post",
+    creator: "Pradnya",
+    desc: "acwgrgwtthtrhtetherhethe",
+    categories: ["action", "scifi"],
+    likeCount: 12,
+    comments: [
+      {
+        username: "vidya",
+        content: "csdgehththrthhtr",
+      },
+      {
+        username: "aniket",
+        content: "csdgehtgrgregergegergtrr",
+      },
+    ],
+  },
+];
+
+// database[0].creator
+const [, { creator, likeCount, categories }] = database;
+console.log(creator, likeCount, categories);
+
+const num = [1, 2];
+const num2 = [3, 4];
+console.log([...num, ...num2]);
+// console.log(
+//   database
+//     .filter(function (post) {
+//       return post.comments.map((comment) => comment.username).includes("vidya");
+//     })
+//     .map((post) => {
+//       return post.creator;
+//     })
+// );
+
+// console.log(
+//   database.filter(function (post) {
+//     return (
+//       post.categories.includes("action") || post.categories.includes("fiction")
+//     );
+//   })
+// );
+
 // console.log(database);
+// console.log(database[1].likeCount);
+
+// const sum1 = function () {};
+// const sum2 = () => {};
 
 // console.log(database[1].title);
 // console.log(database[1].categories[0]);
@@ -256,3 +286,40 @@ Fake database (Api) navigation, etc
 // console.log(filteredPostsByCommentor2, "comment filter cretor name short hand");
 
 // // -x-x-x--x-x-x-x-x-x-x--x-x-x-x-x-x-x-
+// let userInput1 = prompt("Init your num");
+// let userInput2 = prompt("End range num");
+// let userInput3 = prompt("divisibilty");
+// let arr = [];
+// for (let i = userInput1; i <= userInput2; i++) {
+//   if (i % userInput3 == 0) {
+//     arr.push(i); //construct
+//   }
+// }
+// console.log(arr);
+
+/*
+
+Ternary Operator ? :
+Template Literals ``
+Spread Operator ...
+Arrow functions () => {}
+Map, Filter
+Destructuring
+
+*/
+// const names = ["Kunal", "Aniket", "Vidya", "Pradnya"];
+// // const name1 = names[0];
+// // const name2 = names[1];
+// // const name3 = names[2];
+// // const name4 = names[3];
+// // Array destructuring => sequence
+// const [n1, n2, n3, n4] = names;
+// console.log(n3);
+
+// Object destructuring -> accessor => key
+// const bio = {
+//   name: "Kunal",
+//   age: 23,
+// };
+// const { age, name } = bio;
+// console.log(name, age);

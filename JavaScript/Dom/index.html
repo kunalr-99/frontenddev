@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* 
+      Note: while switching from project 1 to 2 change .counter-wrapper and .counter => .review-wrapper .reviews
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      .counter-wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .counter {
+        position: relative;
+        height: 70%;
+        background-color: #111;
+        border-radius: 25px;
+        color: #eee;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+      }
+
+      .review-person {
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+      }
+
+      .review-desg {
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+      }
+
+      .review-about {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.8rem;
+        margin-bottom: 40px;
+      }
+
+      .btn {
+        padding: 10px 15px;
+        background: #444;
+        border-radius: 5px;
+        margin: 20px 15px;
+        text-align: center;
+      }
+      .prev {
+        position: absolute;
+        top: 45%;
+        left: 0;
+      }
+      .next {
+        position: absolute;
+        top: 45%;
+        right: 0;
+      }
+    </style>
+    <title>Dommanipulation</title>
+  </head>
+  <body>
+    <!-- <div class="counter-wrapper">
+      <div class="counter">
+        <div style="font-size: 2rem; margin-bottom: 10px" class="counter-head">
+          Counter
+        </div>
+        <div style="font-size: 2rem; margin-bottom: 20px" class="counter-value">
+          0
+        </div>
+        <div class="buttons">
+          <span class="btn dec">Decrease</span>
+          <span class="btn reset">Reset</span>
+          <span class="btn inc">Increase</span>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- x-x-x-x-x-x-x-x-x--x-x-x-x-x-x--x-x-x-x-x-x--x-x-x-x--x -->
+
+    <!-- <div class="reviews-wrapper">
+      <div class="reviews">
+        <img
+          class="review-img"
+          src="https://tse1.mm.bing.net/th?id=OIP.i5a164FI_E3YHnsx4Q_UlAHaJQ&pid=Api&P=0"
+          alt="review-dp"
+        />
+        <div class="review-person"></div>
+        <div class="review-desg"></div>
+        <div class="review-about"></div>
+        <div></div>
+        <div id="prev" class="btn random">Random</div>
+        <span class="btn prev">p</span>
+        <span class="btn next">n</span>
+      </div>
+    </div> -->
+    <script src="./demo.js"></script>
+  </body>
+</html>
