@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+      .hello {
+        color: aqua;
+      }
+      .bye {
+        background: #000;
+      }
+      .floating {
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="nav" onclick="toggleNav()">click</button>
+    <div class="wrapper relative">
+      <div class="floating">hello</div>
+      <input class="input w-full border" type="text" placeholder="Enter task" />
+      <button class="btn">Add</button>
+    </div>
+    <!-- <div class="lists">
+      <div class="list-one">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+      </div>
+      <div class="list-two">
+        <li>2</li>
+        <li>2</li>
+        <li>2</li>
+        <li>2</li>
+      </div>
+      <div class="list-three">
+        <li>3</li>
+        <li>3</li>
+        <li>3</li>
+        <li>3</li>
+      </div> -->
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      let input = document.querySelector(".input");
+      let btn = document.querySelector(".btn");
+      let wrapper = document.querySelector(".wrapper");
+      let floating = document.querySelector(".floating")
+
+      btn.addEventListener("click", (e) => {
+        let prevInput = btn.previousElementSibling;
+        let newItem = document.createElement("p");
+        newItem.innerHTML = `
+        <li class="flex justify-between items-center border rounded-lg px-2 py-1 sle">${prevInput.value} <span class="rounded-md p-2 bg-red-500 text-white" onclick="hell(this)">Del</span>
+        `;
+        // newItem.textContent = prevInput.value;
+        // newItem.className = "hello bye";
+        wrapper.appendChild(newItem);
+        input.value = "";
+      });
+
+      const hell = (elem) => {
+        elem.parentElement.remove()
+      }                                             
+    </script>
+  </body>
+</html>

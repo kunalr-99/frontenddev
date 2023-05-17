@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+      }
+      .wrapper > * {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tip calculator</h1>
+    <!-- 
+
+      Input -> Bill amount
+      Input -> Tip percentage
+      Input -> no of persons
+      Output -> Total bill / person disp
+
+     -->
+
+    <div class="wrapper">
+      <input class="bill-amount" type="number" placeholder="bill amount" />
+      <button class="bill-btn">Add</button>
+      <input class="tip-percent" type="number" placeholder="tip  percentage" />
+      <button class="tip-btn">Add</button>
+      <input class="persons" type="number" placeholder="how many persons" />
+      <button class="person-btn">Add</button>
+      <span class="total-bill-person">0</span>
+    </div>
+
+    <script>
+      const billAmount = document.querySelector(".bill-amount");
+      const tipPercent = document.querySelector(".tip-percent");
+      const noOfPersons = document.querySelector(".persons");
+      const totalBillAmnt = document.querySelector(".total-bill-person");
+      const billBtn = document.querySelector(".bill-btn");
+      const tipBtn = document.querySelector(".tip-btn");
+      const personBtn = document.querySelector(".person-btn");
+
+      const calculateBill = () => {
+        let bill = Number(billAmount.value);
+        let tip = Number(tipPercent.value);
+        let persons = Number(noOfPersons.value);
+
+        let tipAmnt = bill * (tip / 100);
+
+        let total = bill + tipAmnt;
+
+        let totalPerPerson = total / persons;
+
+        if (totalPerPerson > 100) {
+          totalBillAmnt.style.color = "red";
+        } else {
+          totalBillAmnt.style.color = "green";
+        }
+
+        totalBillAmnt.innerText = totalPerPerson;
+      };
+
+      personBtn.addEventListener("click", () => {
+        calculateBill();
+      });
+      billBtn.addEventListener("click", () => {
+        totalBillAmnt.innerText = billAmount.value;
+      });
+      tipBtn.addEventListener("click", () => {
+        totalBillAmnt.innerText = billAmount.value;
+      });
+    </script>
+  </body>
+</html>
